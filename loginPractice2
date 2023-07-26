@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style1.css'>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Login</h1>
+            <form>
+                <div class="input-group">
+                
+                    <div class="input-field">
+                        <h2>UserName  </h2>
+                           <input type="email" placeholder="Email">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input-field">
+                            <h2>Password </h2>
+                                <input type="password" placeholder="Password">
+                            </div>
+                           
+                            <br>
+                            <br>
+                </div>
+                <div class="btn-field">
+                    <button type="button" size="50px">Login</button>
+                </div>
+                <h3>Don't have an account? <a href="#"> Sign Up </a></h3> 
+            </form>
+        </div>
+    </body>
+</html>
+style1.css:
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu','Sans serif';
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 10px;
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* .input-field{
+    width:50%;
+    height:30px;
+    display: flex;
+    margin-right: 3px;
+    align-items: center;
+    flex-direction: row;
+} */
+.input-field h2{
+    float:left;
+}
+.input-group{
+    height: 28p0x;
+    border-radius: 5px;
+
+}
+.btn-field{
+    width: 100%;
+    border-radius: 5px;
+
+}
+.btn-field button{
+    background: green;
+    border-radius: 5px;
+    color: #fff;
+    height: 40px;
+    width: 50%;
+    cursor: pointer;
+    transition: background 1s;
+}
